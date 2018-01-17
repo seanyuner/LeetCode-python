@@ -23,4 +23,4 @@ Assume we are dealing with an environment which could only hold integers within 
 1. 首先可以将abs小于10的直接返回
 2. 判断正负，可以数值比较，也可以str(x)[0]
 3. 翻转，可以str(x)[::-1]，也可以循环使用%/
-4. 判断溢出，x.bit_length() < 32 或者 abs(x) < 2 ** 31 或者 abs(x) <= 0x7FFFFFFF(=2147483647=2**31-1)
+4. 判断溢出，x.bit_length() < 32 或者 abs(x) < 2 ** 31 或者 abs(x) <= 0x7FFFFFFF(=2147483647=2^31-1)
