@@ -18,4 +18,5 @@ return [0, 1].
 
 
 **solution:**
-
+1. 配对问题
+2. 建立dict存储，key为目标值，value为当前值index，循环出现key，则返回两个index即可
