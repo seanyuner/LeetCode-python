@@ -17,7 +17,7 @@ class Solution(object):
 
 
 # 225ms
-class Solution(object):
+class Solution2(object):
     def isPalindrome(self, x):
         """
         :type x: int
@@ -27,7 +27,7 @@ class Solution(object):
 
     
 # 335ms
-class Solution(object):
+class Solution3(object):
     def isPalindrome(self, x):
         """
         :type x: int
