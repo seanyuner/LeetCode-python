@@ -21,3 +21,4 @@ return [0, 1].
 1. 配对问题
 2. 建立dict存储，key为目标值，value为当前值index，循环出现key，则返回两个index即可
 3. 循环可以用range(len(x))，也可以使用enumerate(x)
+4. 也可使用类似冒泡法，但是time complicity 为 O(n^2)
