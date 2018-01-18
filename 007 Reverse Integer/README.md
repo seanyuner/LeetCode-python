@@ -1,5 +1,7 @@
 ## [007 reverse integer](https://leetcode.com/problems/reverse-integer/description/)
 
+difficulty:easy
+
 **题目:**
 
 Given a 32-bit signed integer, reverse digits of an integer.
