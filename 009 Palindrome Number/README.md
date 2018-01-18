@@ -22,4 +22,6 @@ There is a more generic way of solving this problem.
 2. 正数中10的倍数也不是回文数，可先返回false
 3. 剩下的和[007 reverse integer](https://github.com/seanyuner/LeetCode-python/tree/master/007%20Reverse%20Integer)就有些类似了，可以使用str(),也可以使用循环%/
 4. 若使用str()，理论上不必先处理负数，*return str(x) == str(x)[::-1]* 一行即可
-5. 注意奇位数和偶位数会不会有影响
+5. No extra space means O(1) extra space. extra space usually means O(n) extra space. 
+6. 注意奇位数和偶位数会不会有影响
+7. 注意有可能翻转后的数字会有溢出问题
