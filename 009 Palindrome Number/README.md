@@ -1,12 +1,12 @@
 
 ## [009 Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
 
-**题目**
+**题目:**
 
 Determine whether an integer is a palindrome. Do this without extra space.
 
 
-**hints**
+**hints:**
 
 Could negative integers be palindromes? (ie, -1)
 
@@ -17,4 +17,4 @@ You could also try reversing an integer. However, if you have solved the problem
 There is a more generic way of solving this problem.
 
 
-**solution**
+**solution:**
