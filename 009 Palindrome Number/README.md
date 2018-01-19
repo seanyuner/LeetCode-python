@@ -18,7 +18,7 @@ You could also try reversing an integer. However, if you have solved the problem
 
 There is a more generic way of solving this problem.
 
-
+---
 **solution:**
 1. 由于负数不是回文数，可首先直接判断并返回false
 2. 正数中10的倍数也不是回文数，可先返回false
