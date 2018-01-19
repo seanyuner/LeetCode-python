@@ -13,6 +13,7 @@ Input is guaranteed to be within the range from 1 to 3999.
 1. [Roman numerals](http://en.wikipedia.org/wiki/Roman_numerals)
 
 2. 简单规则（3999以内）：
+
    I. 基本字符：'M': 1000,'D': 500 ,'C': 100,'L': 50,'X': 10,'V': 5,'I': 1
    II. the numeral I can be placed before V and X to make 4 units (IV) and 9 units (IX) respectively.
    III. the numeral X can be placed before L and C to make 40 (XL) and 90 (XC) respectively.
@@ -26,3 +27,4 @@ Input is guaranteed to be within the range from 1 to 3999.
 
 6. 注意循环时候起止点，第一种最后一位无法比较，但可直接相加，第二种第一位无法比较，也可直接相加。（特殊情况不会出现在起止点）
 
+7. 实际上，出现特殊位置的，只有1、10、100之类的数，可以将其用作判断标准
