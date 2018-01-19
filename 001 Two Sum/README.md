@@ -16,7 +16,7 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 
-
+---
 **solution:**
 1. 配对问题
 2. 建立dict存储，key为目标值，value为当前值index，循环出现key，则返回两个index即可
