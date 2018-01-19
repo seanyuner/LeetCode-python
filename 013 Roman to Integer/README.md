@@ -14,13 +14,13 @@ Input is guaranteed to be within the range from 1 to 3999.
 
 2. 简单规则（3999以内）：
 
-   I. 基本字符：'M': 1000,'D': 500 ,'C': 100,'L': 50,'X': 10,'V': 5,'I': 1
+  > I. 基本字符：'M': 1000,'D': 500 ,'C': 100,'L': 50,'X': 10,'V': 5,'I': 1
    
-   II. the numeral I can be placed before V and X to make 4 units (IV) and 9 units (IX) respectively.
+  > II. the numeral I can be placed before V and X to make 4 units (IV) and 9 units (IX) respectively.
    
-   III. the numeral X can be placed before L and C to make 40 (XL) and 90 (XC) respectively.
+  > III. the numeral X can be placed before L and C to make 40 (XL) and 90 (XC) respectively.
    
-   IV. the numeral C can be placed before D and M to make 400 (CD) and 900 (CM) according to the same pattern.
+  > IV. the numeral C can be placed before D and M to make 400 (CD) and 900 (CM) according to the same pattern.
    
 3. 遍历一遍累加是必须的，用字典存储基本字符及对应阿拉伯数值
 
