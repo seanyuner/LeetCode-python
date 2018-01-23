@@ -1,4 +1,4 @@
-# 208ms
+# 208ms 71.34%
 class Solution(object):
     def isPalindrome(self, x):
         """
@@ -16,7 +16,7 @@ class Solution(object):
         return True
 
 
-# 225ms
+# 225ms 54.89%
 class Solution2(object):
     def isPalindrome(self, x):
         """
@@ -26,7 +26,7 @@ class Solution2(object):
         return False if x < 0 else str(x) == str(x)[::-1]
 
     
-# 335ms
+# 335ms 21.98%
 class Solution3(object):
     def isPalindrome(self, x):
         """
