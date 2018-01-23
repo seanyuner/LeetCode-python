@@ -1,4 +1,4 @@
-# 45ms
+# 45ms 52.73%
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -13,7 +13,7 @@ class Solution(object):
             dict[target - num] = i
 
 
-# 36ms
+# 36ms 71.84%
 class Solution2(object):
     def twoSum(self, nums, target):
         """
@@ -28,7 +28,7 @@ class Solution2(object):
             dict[target - nums[i]] = i
 
 
-# 5082ms
+# 5082ms 22.95%
 class Solution3(object):
     def twoSum(self, nums, target):
         """
