@@ -1,4 +1,4 @@
-# 45ms
+# 45ms 74.99%
 class Solution(object):
     def reverse(self, x):
         """
@@ -9,7 +9,7 @@ class Solution(object):
         return n if n.bit_length() < 32 else 0
 
 
-# 53ms
+# 53ms 41.68%
 class Solution2(object):
     def reverse(self, x):
         """
