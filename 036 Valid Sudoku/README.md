@@ -8,7 +8,7 @@ Determine if a Sudoku is valid, according to: [Sudoku Puzzles - The Rules](http:
 
 The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
 
-![sudoku.png]()
+![sudoku.png](https://github.com/seanyuner/LeetCode-python/blob/master/036%20Valid%20Sudoku/sudoku.png)
 A partially filled sudoku which is valid.
 
 Note:
