@@ -12,10 +12,36 @@ class Solution1(object):
         while mid ** 2 > x:
             mid = (mid + x / mid) / 2
         return mid
+ 
+
+# 53s 93.39%
+class Solution2(object):
+    def mySqrt(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        if x == 1:
+            return 1
+        
+        start = 0
+        end = x
+        mid = (start + end) / 2
+        while mid:
+            if mid ** 2 > x:
+                end = mid
+            else:
+                start = mid
+            last_mid = mid
+            mid = (start + end) / 2
+            if mid == last_mid:
+                break
+                
+        return mid
 
 
 # 63ms 54.31%
-class Solution2(object):
+class Solution3(object):
     def mySqrt(self, x):
         """
         :type x: int
@@ -35,7 +61,7 @@ class Solution2(object):
 
     
 # 63ms 54.31%
-class Solution3(object):
+class Solution4(object):
     def mySqrt(self, x):
         """
         :type x: int
