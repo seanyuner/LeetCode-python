@@ -9,7 +9,7 @@ class Solution1(object):
             return x
         
         mid = x / 2
-        while mid**2 > x:
+        while mid ** 2 > x:
             mid = (mid + x / mid) / 2
         return mid
 
@@ -41,7 +41,7 @@ class Solution3(object):
         :type x: int
         :rtype: int
         """
-        if x<= 1:
+        if x <= 1:
             return x
         
         start = 1
