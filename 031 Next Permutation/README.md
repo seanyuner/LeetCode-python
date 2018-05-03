@@ -22,7 +22,7 @@ The replacement must be in-place and use only constant extra memory.
 **solution:**
 1. 解法可以参考leetcode的[Solution](https://leetcode.com/problems/next-permutation/solution/)中的示意图，即下图，可以分为三步，一是逆序查找第一个倒序的元素，二是逆序查找第一个大于该倒序元素的元素，并交换，三是将第一个倒序元素后面的所有元素升序排列（直接[::-1]即可）。
 <p align='center'> 
-<img src=31_Next_Permutation.gif height=150> 
+<img src=31_Next_Permutation.gif height=250> 
 </p>
 
 ```
@@ -48,5 +48,5 @@ class Solution2(object):
 ```
 
 2. 如上述solution2所示，其实里面暗含了几种特殊情况
-  - 一是如果数组是逆序的，如3,2,1，此时i<0接返回nums[::-1]
-  - 二是如果找不到大于第一个逆序元素的元素，如1,3,2，此时第二步不会发生任何交换
+  * 一是如果数组是逆序的，如3,2,1，此时i<0接返回nums[::-1]
+  * 二是如果找不到大于第一个逆序元素的元素，如1,3,2，此时第二步不会发生任何交换
