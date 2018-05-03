@@ -22,10 +22,10 @@ The replacement must be in-place and use only constant extra memory.
 **solution:**
 1. 解法可以参考leetcode的[Solution](https://leetcode.com/problems/next-permutation/solution/)中的示意图，即下图，可以分为三步，一是逆序查找第一个倒序的元素，二是逆序查找第一个大于该倒序元素的元素，并交换，三是将第一个倒序元素后面的所有元素升序排列（直接[::-1]即可）。
 <p align='center'> 
-<img src=31_Next_Permutation.gif> 
+<img src=31_Next_Permutation.gif height=150> 
 </p>
 
-'''
+```
 class Solution2(object):
     def nextPermutation(self, nums):
         """
@@ -33,20 +33,20 @@ class Solution2(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         length = len(nums)
-        # 首先找到倒数第一个逆序的元素
+        # 逆序查找第一个倒序的元素
         i = length - 2
         while i >= 0 and nums[i] >= nums[i + 1]:
             i -= 1
-        # 将找到的第一个逆序元素和倒数第一个大于该逆序元素的元素交换
+        # 逆序查找第一个大于该倒序元素的元素，并交换
         if i >= 0:
             j = length - 1
             while j >= 0 and nums[j] <= nums[i]:
                 j -= 1
             nums[i], nums[j] = nums[j], nums[i]
-        # 交换位置后面元素倒序（没有逆序元素则返回数组反序）
+        # 将第一个倒序元素后面的所有元素升序排列
         nums[i + 1:] = nums[i + 1:][::-1]
-'''
+```
 
-2. 需要考虑几种特殊情况，一个是数组若是
-
-
+2. 如上述solution2所示，其实里面暗含了几种特殊情况
+  - 一是如果数组是逆序的，如3,2,1，此时i<0接返回nums[::-1]
+  - 二是如果找不到大于第一个逆序元素的元素，如1,3,2，此时第二步不会发生任何交换
