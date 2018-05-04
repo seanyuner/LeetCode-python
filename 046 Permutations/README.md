@@ -9,7 +9,9 @@ Given a collection of distinct integers, return all possible permutations.
 **examples:**
 
 Input: [1,2,3]
+
 Output:
+
 [
   [1,2,3],
   [1,3,2],
@@ -27,5 +29,7 @@ Output:
 2. 同样是递归，将数组的首个元素插入到剩下所有元素构成的所有排列的不同位置即可，如解法2所示。
 
 3. 元素个数递增地构建当前所有元素能组成的排列，对于新的元素，插入已有排列不同位置则得到不同新的排列，直到所有元素插入完即可，如解法3所示。
+
+4. 解法4是一种DFS（Depth First Search），元素个数递增地加入数组，也是将后面一个元素加入到前面元素构成数组的不同位置，同时用一个index记录数组元素长度，当长度饱和时将其加入到输出list中。
 
 4. python有自带的itertools函数进行排列组合，效率也是非常高。
